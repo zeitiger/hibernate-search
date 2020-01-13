@@ -47,7 +47,7 @@ public final class HibernateSearchJobXmlResolver extends AbstractJobXmlResolver 
 			return classLoader.getResourceAsStream( path );
 		}
 		else {
-			throw new SearchException( "Not a Hibernate Search JSR-352 job: " + jobXml );
+			return null;
 		}
 	}
 }
